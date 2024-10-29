@@ -8,3 +8,15 @@
     padding-top: 18px;
     padding-left: 20px;
 }
+.img {
+    margin: 5% 0px;
+    height: 50%;
+    width: 50%;
+}
+.imgtext-header {
+    font-size: 30px;
+    text-align: center;
+}
+.imgdiv {
+    margin: auto;
+}
