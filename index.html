@@ -9,7 +9,7 @@
 </head>
 <body>  
     <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md bg-dark fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="navbar navbar-expand-md bg-dark d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <div class="container-fluid mx-3">   
                 <a class="navbar-brand col-md-3  mb-md-0" href="#">EK Global LLC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -19,13 +19,13 @@
                 <div class="collapse navbar-collapse col-12 col-md-auto justify-content-center mb-md-0" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                            <a class="nav-link active" aria-current="page" href="#">Main</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Рекомендуемые</a>
+                            <a class="nav-link" href="#">Recommending</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Цена</a>
+                            <a class="nav-link" href="#">Price</a>
                         </li>
                         <li class="nav-item d-md-none d-block">
                             <a href="tel:+375298025647" class="navbar-brand badge text-bg-primary text-nowrap fs-5 my-3">+375298025647</a>
@@ -36,24 +36,34 @@
                     <a href="tel:+375298025647" class="navbar-brand badge text-bg-primary text-nowrap fs-6">+375298025647</a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header> 
   <div class="container-fluid">
-        <div style="display: flex;">
-            <img class="img" src="IMG_3347.WEBP">
-           <div class="imgdiv"><p class="imgtext-header" width="200px"><span style="color: rgb(247, 38, 38); ">Appliance Repair</span><br><br><span class="spanimg1">Мы работаем:</span><br><span class="spanimg2">8am-6pm</span><br><br><a href="tel:+375298025647" class="navbar-brand badge text-bg-primary text-nowrap fs-3 mx-2">+375298025647</a></p>
-           </div>
+        <div class="row">
+            <div class="col-md-7 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="IMG_3347.WEBP">
+            </div>
+            <div class="col-md-5 order-md-2 align-self-center text-center">
+                <h2 class="fs-1 badge text-bg-danger ">ApplianceRepair</h2>
+                <p class="imgtext-header" width="200px">
+                    <br><br>
+                    <span class="spanimg1">Мы работаем:</span><br>
+                    <span class="spanimg2">8am-6pm</span>
+                    <br><br>
+                    <a href="tel:+375298025647" class="navbar-brand badge text-bg-primary text-nowrap fs-3 mx-2">+375298025647</a>
+                </p>
+            </div>
         </div>
   </div>
   <div class="container">
     <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Рекомендуемые</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Цена</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">&copy; 2024 EK Global LLC</p>
-    </footer>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Main</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Recommending</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Price</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2024 EK Global LLC</p>
+      </footer>
   </div>
     <script src="assets/scripts/bootstrap.min.js"></script>
 </body>
