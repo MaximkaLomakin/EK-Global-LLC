@@ -86,3 +86,10 @@ b {
         transform: translateX(-100%);
     }
 }
+
+.hover-card:hover {
+    transform: scale(1.1);
+}
+.hover-card {
+    transition: transform 0.3s ease;
+}
