@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('../fonts/Poppins-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins-Medium.woff') format('woff');
+}
+*{
+    font-family: 'Poppins Light', 'Times New Roman', sans-serif;
+}
+b {
+    font-family: 'Poppins Medium', 'Arial Black', serif;
+}
+.f-bold {
+    font-family: 'Poppins Medium', 'Arial Black', serif;
+}
+.der{
+    padding-top: 18px;
+    padding-left: 20px;
+    color: rgb(243, 59, 59);
+    font-weight: bold;
+}
+.ders{
+    padding-top: 18px;
+    padding-left: 20px;
+}
+.img {
+    margin: 5% 0px;
+    height: 50%;
+    width: 50%;
+}
+.imgtext-header {
+    font-size: 30px;
+    text-align: center;
+}
+.imgdiv {
+    margin: auto;
+}
+.icon-1 {
+    font-size: 8.0rem!important;
+}
+.img-card {
+    max-height: 200px;
+}
+
+.logos::before, 
+.logos::after {
+    content: '';
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.logos-slide {
+    animation: 10s slide infinite linear;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 50px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
