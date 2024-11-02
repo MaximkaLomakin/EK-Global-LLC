@@ -37,11 +37,19 @@ b {
 .imgdiv {
     margin: auto;
 }
-.icon-1 {
+.icon-8 {
     font-size: 8.0rem!important;
+}
+.icon-1 {
+    font-size: 1.0em!important;
 }
 .img-card {
     max-height: 200px;
+}
+.why-icon-small
+{
+    width: 3rem;
+    height: 3rem;
 }
 
 .logos::before, 
@@ -91,5 +99,5 @@ b {
     transform: scale(1.1);
 }
 .hover-card {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease-out;
 }
