@@ -101,20 +101,38 @@ b {
 .hover-card {
     transition: transform 0.4s ease-out;
 }
-.btn-red {
-    background-color: #de2121!important;
-    border: 0px!important;
+.bg-red {
+    color: white;
+    background-color: #de2121;
+    border-color: #de2121;
 }
+.text-red {
+    color: #de2121;
+}
+.btn-red {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #de2121;
+    --bs-btn-border-color: #de2121;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d32020;
+    --bs-btn-hover-border-color: #c51f1f;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #c51f1f;
+    --bs-btn-active-border-color: #c41919;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #de2121;
+    --bs-btn-disabled-border-color: #de2121;
+}
+
 .main-block {
     background-image: url('../images/back.svg');
     background-color: #bec0d6;
     background-repeat: repeat;
-    background-size: 7%;
+    background-size: 8%;
 }
 .vh-101
 {
     min-height: 100vh;
-}
-.cardname {
-    text-align: center;
 }
