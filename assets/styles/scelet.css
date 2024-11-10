@@ -73,7 +73,7 @@ b {
 }
 
 .logos-slide {
-    animation: 10s slide infinite linear;
+    animation: 20s slide infinite linear;
 }
 
 .logos:hover .logos-slide {
