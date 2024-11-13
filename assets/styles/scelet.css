@@ -136,3 +136,23 @@ b {
 {
     min-height: 100vh;
 }
+.inline-bullet-list {
+    list-style: none;
+    padding: 0;
+    font-size: 17px;
+    display: flex;
+  }
+  
+  .inline-bullet-list li {
+    margin-right: 10px; /* Отступ между пунктами */
+    position: relative;
+    padding-left: 20px; /* Отступ для буллета */
+  }
+  
+  .inline-bullet-list li::before {
+    content: "•"; /* Символ буллета */
+    position: absolute;
+    left: 0;
+    color: black; /* Цвет буллета */
+  }
+  
