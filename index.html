@@ -27,9 +27,9 @@
                             <a class="nav-link active" aria-current="page" href="#">Main</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">We repair</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li class="nav-item"><a class="nav-link" href="#repair">We repair</a></li>
+                            <a class="nav-link dropdown-toggle" href="#repair"  role="button" aria-expanded="false">We repair</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">We repair</li>
                                 <li><a class="dropdown-item" href="#">Stove Repair</a></li>
                                 <li><a class="dropdown-item" href="#">Wine-cooler Repair</a></li>
                                 <li><a class="dropdown-item" href="#">Refrigerator Repair</a></li>
@@ -142,7 +142,7 @@
         </div>
         <div id="repair" class="my-5 rounded rounded-3">
             <p class="text-xxl-center fw-bold f-bold fs-1">We repair</p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3 px-4">
                 <div class="col hover-card">
                     <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
                         <img src="stove.png" class="img-fluid img-card mx-auto d-block m-2">
@@ -675,6 +675,45 @@
     <script src="assets/scripts/tiny-slider.js"></script>
     <script src="assets/scripts/t-scroll.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cloneEl = document.querySelector(".logos-slide").cloneNode(true);
+            const logos = document.querySelector('.logos').appendChild(cloneEl);
+            var slider = tns({
+            "container": "#reviewSlider",
+            "center": true,
+            "controls": true,
+            "nav": false,
+            responsive: {
+                300: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1,
+                },
+                700: {
+                gutter: 30,
+                items: 1,
+                },
+                1200: {
+                items: 3,
+                gutter: 50,
+                }
+            },
+            "autoplay": true,
+            //"autoplayHoverPause": true,
+            "autoplayButtonOutput": false,
+            "autoplayTimeout": 20000,
+            "loop": true,
+            "swipeAngle": false,  
+            "mouseDrag": true,
+            "speed": 800,
+            "prevButton": '#slider1_prev', 
+            "nextButton": '#slider1_next'
+            });
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        });
+    </script>
 </body>
 
 </html>
