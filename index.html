@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles/scelet.css">
+    <link rel="stylesheet" href="assets/styles/tiny-slider.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="navbar navbar-expand-md d-flex flex-wrap align-items-center justify-content-center py-3 main-block">
+    <div class="container-fluid px-4 main-block">
+        <div class="navbar navbar-expand-md  justify-content-center py-3 ">
             <div class="container mx-3">
-                <a class="navbar-brand col-md-3 f-bold mb-md-0 fs-4" href="#">EK Global LLC</a>
+                <a class="navbar-brand col-md-3 f-bold mb-md-0 fs-4" href="#">EK Global</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
                     <span class="navbar-toggler-icon"></span>
@@ -43,36 +43,30 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="container-fluid px-4 main-block">
-        <div class="d-flex flex-row-reverse">
-            <div class="p-2"><img src="google logo.png" style="height: 100px; width: 160px;" alt=""></div>
-        </div>
-        <div class="row align-items-md-center g-5 px-2 mx-lg-5 vh-101">
-          <div class="col-12 col-md-7 col-lg-7 order-md-1 px-0 align-self-end  align-self-md-center">
-            <img src="konstantin thermador.png" class="img-fluid">
-          </div>
-          <div class="col-12 col-md-5">
-            <div class="display-2 fw-bold f-bold text-body-emphasis lh-1 mb-4">EK Global LLC</div>
-            <div class="display-5 fw-bold f-bold text-body-emphasis lh-1 mb-4">Appliance Repair</div>
-            <p class="lead fs-2 text-body-emphasis lh-1 mb-md-6">6AM - 8PM DAILY <br><span class="fs-5">(WE WORK ON WEEKENDS)</span></p>
-            <p class="lead fs-2 text-body-emphasis lh-1 mb-md-5"><a href="tel:+19803714319" class="navbar-brand">(980)371-4319</a></p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
-              <button type="button" class="btn mt-md-3 btn-red btn-lg px-4 me-md-2 btn-lg f-bold fw-bold hover-card mx-md-0 mx-4 ">Book and get 10% OFF</button>
+        <div class="vh-101 d-flex flex-md-column">
+            <div class="d-none d-md-flex flex-row-reverse m-0 p-0">
+                <a href="#reviews" data-bs-toggle="tooltip" data-bs-title="Go to reviews">
+                    <div class="card rounded-start-pill h-100 border-0 pop-block">
+                        <div class="card-body py-0">
+                            <img src="google logo.png" class="img-fluid " style="height: 120px; width: auto;">
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
+            <div class="row align-items-md-center align-self-center g-5 px-2 mx-lg-5">  
+                <div class="col-12 col-md-7 col-lg-7 order-md-1 px-0 align-self-end  align-self-md-center">
+                    <img src="konstantin thermador.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="display-5 fw-bold f-bold text-body-emphasis lh-1 mb-4">Appliance Repair</div>
+                    <p class="lead fs-2 text-body-emphasis lh-1 mb-md-6">6AM - 8PM DAILY <br><span class="fs-5">(WE WORK ON WEEKENDS)</span></p>
+                    <p class="lead fs-2 text-body-emphasis lh-1 mb-md-5"><a href="tel:+19803714319" class="navbar-brand">(980)371-4319</a></p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
+                    <button type="button" class="btn mt-md-3 btn-red btn-lg px-4 me-md-2 btn-lg f-bold fw-bold hover-card mx-md-0 mx-4 ">Book and get 10% OFF</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="py-3">
-            <ul class="inline-bullet-list">
-               <li>SAME DAY REPAIR</li>
-               <li>LOCAL BUSINESS</li>
-               <li>INSURED</li>
-               <li>EPA 608 & OSHA CERTIFIED TECHNICIANS</li>
-               <li>WARRANTY</li>
-               <li>DISCOUNTS FOR VETERANS, SENIORS AND FAMILIES WITH KIDS</li>
-               <li></li>
-            </ul>          
-        </div> 
       </div>
     <div class="container">
         <div class="shadow p-5 mt-5 bg-body-tertiary rounded-3">
@@ -296,17 +290,109 @@
                 </div>
             </div>
         </div>
-        <div class="py-3">
-            <ul class="inline-bullet-list">
-               <li>SAME DAY REPAIR</li>
-               <li>LOCAL BUSINESS</li>
-               <li>INSURED</li>
-               <li>EPA 608 & OSHA CERTIFIED TECHNICIANS</li>
-               <li>WARRANTY</li>
-               <li>DISCOUNTS FOR VETERANS, SENIORS AND FAMILIES WITH KIDS</li>
-               <li></li>
-            </ul>          
-        </div> 
+    </div>
+    <div class="container-fluid" id="reviews">
+        <div class="my-5 rounded rounded-3">
+            <p class="text-center fw-bold f-bold fs-1">Reviews</p>
+            <div class="row">
+                <div class="d-flex d-none d-md-block col-md-2 col-lg-1 align-self-center text-end">
+                    <button data-controls="prev" class="btn btn-red btn-circle" id="slider1_prev">
+                        <i class="bi bi-chevron-compact-left fs-3"></i>
+                    </button>
+                </div>
+                <div class="col-12 col-md-8 col-lg-10">
+                    <div id="reviewSlider">
+                        <div class="item">
+                            <div class="card hover-card my-4 p-3 shadow bg-body-white rounded h-100 border-0">
+                                <div class="d-flex flex-row justify-content-start align-items-center pb-4 mb-auto">
+                                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="rounded-circle" />
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="name">Name Surname</div>
+                                    </div>
+                                    <div class="mb-2 fs-5 ms-auto">
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-half active-star"></span>
+                                    </div>
+                                </div>
+                                <div class="fw-bold pb-2 pt-1 fs-5">Great Service</div>
+                                <div class="pb-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hover-card my-4 p-3 shadow bg-body-white rounded h-100 border-0">
+                                <div class="d-flex flex-row justify-content-start align-items-center pb-4 mb-auto">
+                                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="rounded-circle" />
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="name">Name Surname</div>
+                                    </div>
+                                    <div class="mb-2 fs-5 ms-auto">
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-half active-star"></span>
+                                    </div>
+                                </div>
+                                <div class="fw-bold pb-2 pt-1 fs-5">Great Service</div>
+                                <div class="pb-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hover-card my-4 p-3 shadow bg-body-white rounded h-100 border-0">
+                                <div class="d-flex flex-row justify-content-start align-items-center pb-4 mb-auto">
+                                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="rounded-circle" />
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="name">Name Surname</div>
+                                    </div>
+                                    <div class="mb-2 fs-5 ms-auto">
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-half active-star"></span>
+                                    </div>
+                                </div>
+                                <div class="fw-bold pb-2 pt-1 fs-5">Great Service</div>
+                                <div class="pb-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hover-card my-4 p-3 shadow bg-body-white rounded h-100 border-0">
+                                <div class="d-flex flex-row justify-content-start align-items-center pb-4 mb-auto">
+                                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="rounded-circle" />
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="name">Name Surname</div>
+                                    </div>
+                                    <div class="mb-2 fs-5 ms-auto">
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-fill active-star"></span>
+                                        <span class="bi bi-star-half active-star"></span>
+                                    </div>
+                                </div>
+                                <div class="fw-bold pb-2 pt-1 fs-5">Great Service</div>
+                                <div class="pb-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex d-none d-md-block col-md-2 col-lg-1 align-self-center ">
+                    <button data-controls="next" class="btn btn-red btn-circle" id="slider1_next">
+                        <i class="bi bi-chevron-compact-right fs-3"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="my-5 rounded rounded-3">
             <p class="text-center fw-bold f-bold fs-1">Serving area</p>
             <div class="row row-cols-1 row-cols-lg-2 g-md-5">
@@ -315,182 +401,182 @@
                     <div class="row row-cols-2 row-cols-lg-3 g-3">
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body">
-                                    <h4 class="text-center f-bold">Charlotte  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Charlotte</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body">
+                                <div class="card-body d-flex justify-content-center align-items-center">
                                     <h4 class="text-center f-bold">Stallings</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body">
-                                    <h4 class="text-center f-bold">Newell  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Newell</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Harrisburg  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Harrisburg</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Allen  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Allen</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body">
-                                    <h4 class="text-center f-bold">Mint Hill  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Mint Hill</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Indian Trail  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Indian Trail</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Wesley Chapel  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Wesley Chapel</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Monroe  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Monroe</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Unionville  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Unionville</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Mineral Springs  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Mineral Springs</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Pineville  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Pineville</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Waxhaw  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Waxhaw</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Belmont  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Belmont</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Matthews  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Matthews</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Weddington  </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Weddington</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="text-center fs-2 fw-bold f-bold mb-3">SC</div>
+                    <div class="text-center fs-2 fw-bold f-bold mb-3 mt-3 mt-md-0">SC</div>
                     <div class="row row-cols-2 row-cols-lg-3 g-3">
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Indian Hook </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Indian Hook</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Indian Land </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Indian Land</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Catawba </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Catawba</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Fort Mill </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Fort Mill</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Lesslie </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Lesslie</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Lake Wylie </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Lake Wylie</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body ">
-                                    <h4 class="text-center f-bold">Spring Valley </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Spring Valley</h5>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100 ">
-                                <div class="card-body">
-                                    <h4 class="text-center f-bold">Rock Hill </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Rock Hill</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col hover-card">
                             <div class="card border-0 shadow p-2 bg-white rounded h-100">
-                                <div class="card-body">
-                                    <h4 class="text-center f-bold">Tega Cay </h5>
+                                <div class="card-body d-flex justify-content-center align-items-center">
+                                    <h4 class="text-center f-bold">Tega Cay</h5>
                                 </div>
                             </div>
                         </div>
@@ -527,10 +613,11 @@
             <li class="nav-item"><a href="#repair" class="nav-link px-2 text-body-secondary">We repair</a></li>
             <li class="nav-item"><a href="#why-us" class="nav-link px-2 text-body-secondary">Why us?</a></li>
         </ul>
-        <p class="text-center text-body-secondary">&copy; 2024 EK Global LLC</p>
+        <p class="text-center text-body-secondary">&copy; 2024 EK Global</p>
     </footer>
     </div>
-    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>    
+    <script src="assets/scripts/tiny-slider.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
 
