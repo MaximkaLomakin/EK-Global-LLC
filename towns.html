@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ek-global-llc</title>
+    <title>Ek-global</title>
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles/scelet.css">
-
+    <link rel="stylesheet" href="assets/styles/tiny-slider.css">
+    <link rel="stylesheet" href="assets/styles/t-scroll.min.css">
 </head>
 
 <body>
-    <header>
-        <div class="navbar navbar-expand-md d-flex flex-wrap align-items-center justify-content-center py-3 main-block">
+    <div class="container-fluid px-4 main-block">
+        <div class="navbar navbar-expand-md  justify-content-center py-3 ">
             <div class="container mx-3">
-                <a class="navbar-brand col-md-3 f-bold mb-md-0 fs-4" href="#">EK Global LLC</a>
+                <a class="navbar-brand col-md-3 f-bold mb-md-0 fs-4 t-animated fadeDown" data-t-show="1" href="#">EK Global</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
                     <span class="navbar-toggler-icon"></span>
@@ -25,39 +26,103 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Main</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#repair">We repair</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">We repair</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="nav-item"><a class="nav-link" href="#repair">We repair</a></li>
+                                <li><a class="dropdown-item" href="#">Stove Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Wine-cooler Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Refrigerator Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Washer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Range Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Garbage Disposal Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Cooktop Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Freezer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Ice maker Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Dryer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Microwave Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Dishwasher Repair</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serving area</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="nav-item"><a class="nav-link" href="#serving">Serving area</a></li>
+                                <li><a class="dropdown-item" href="#">Charlotte NC</a></li>
+                                <li><a class="dropdown-item" href="#">Stallings NC</a></li>
+                                <li><a class="dropdown-item" href="#">Newell NC</a></li>
+                                <li><a class="dropdown-item" href="#">Harrisburg NC</a></li>
+                                <li><a class="dropdown-item" href="#">Allen NC</a></li>
+                                <li><a class="dropdown-item" href="#">Mint Hill NC</a></li>
+                                <li><a class="dropdown-item" href="#">Indian Trail NC</a></li>
+                                <li><a class="dropdown-item" href="#">Wesley Chapel NC</a></li>
+                                <li><a class="dropdown-item" href="#">Monroe NC</a></li>
+                                <li><a class="dropdown-item" href="#">Unionville NC</a></li>
+                                <li><a class="dropdown-item" href="#">Mineral Springs NC</a></li>
+                                <li><a class="dropdown-item" href="#">Pineville NC</a></li>
+                                <li><a class="dropdown-item" href="#">Waxhaw NC</a></li>
+                                <li><a class="dropdown-item" href="#">Belmont NC</a></li>
+                                <li><a class="dropdown-item" href="#">Matthews NC</a></li>
+                                <li><a class="dropdown-item" href="#">Weddington NC</a></li>
+
+
+                                <li><a class="dropdown-item" href="#">Indian Hook SC</a></li>
+                                <li><a class="dropdown-item" href="#">Indian Land SC</a></li>
+                                <li><a class="dropdown-item" href="#">Catawba SC</a></li>
+                                <li><a class="dropdown-item" href="#">Fort Mill SC</a></li>
+                                <li><a class="dropdown-item" href="#">Lesslie SC</a></li>
+                                <li><a class="dropdown-item" href="#">Lake Wylie SC</a></li>
+                                <li><a class="dropdown-item" href="#">Spring Valley SC</a></li>
+                                <li><a class="dropdown-item" href="#">Rock Hill SC</a></li>
+                                <li><a class="dropdown-item" href="#">Tega Cay SC</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#why-us">Why us?</a>
                         </li>
+                        
                         <li class="nav-item d-md-none d-block">
-                            <a href="tel:+375298025647"
-                                class="navbar-brand badge text-bg-primary text-nowrap fs-4 my-3">+19803714319</a>
+                            <a href="tel:+19803714319"
+                                class="navbar-brand badge text-bg-primary text-nowrap fs-4 my-3">(980)371-4319</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 d-none d-md-block text-end mb-md-0">
-                    <a href="tel:+375298025647"
-                        class="navbar-brand badge text-bg-primary text-nowrap fs-5">+19803714319</a>
+                
+            </div>
+        </div>
+        <div class="vh-101 d-flex flex-md-column">
+            <div class="d-none d-md-flex flex-row-reverse m-0 p-0 t-animated fadeIn" data-t-show="3">
+                <a href="#reviews" data-bs-toggle="tooltip" data-bs-title="Go to reviews">
+                    <div class="card rounded-start-pill h-100 border-0 pop-block">
+                        <div class="card-body py-0">
+                            <img src="google logo.png" class="img-fluid " style="height: 120px; width: auto;">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row align-items-md-center align-self-center g-5 px-2 mx-lg-5">  
+                <div class="col-12 col-md-7 col-lg-7 order-md-1 px-0 align-self-end  align-self-md-center">
+                    <img src="konstantin thermador.png" class="img-fluid t-animated fadeDown" data-t-show="1">
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="display-5 fw-bold f-bold text-body-emphasis lh-1 mb-4 t-animated fadeLeft" data-t-show="1">Appliance Repair</div>
+                    <p class="lead fs-2 text-body-emphasis lh-1 mb-md-6 t-animated fadeLeft" data-t-show="2">6AM - 8PM DAILY <br><span class="fs-5">WE WORK WEEKENDS</span></p>
+                    <p class="lead fs-2 text-body-emphasis lh-1 mb-md-5 t-animated fadeLeft" data-t-show="2"><a href="tel:+19803714319" class="navbar-brand">(980)371-4319</a></p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 t-animated bounceLeft" data-t-show="2.5">
+                        <button type="button" class="btn mt-md-3 btn-red btn-lg px-4 me-md-2 btn-lg f-bold fw-bold hover-card mx-md-0 mx-4 ">Book and get 10% OFF</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div class="container-fluid px-4 main-block">
-        <div class="row align-items-md-center g-5 px-2 mx-lg-5 vh-101">
-          <div class="col-12 col-md-7 col-lg-7 order-md-1 px-0 align-self-end  align-self-md-center">
-            <img src="town.png" class="img-fluid">
-          </div>
-          <div class="col-12 col-md-5">
-            <div class="display-2 fw-bold f-bold text-body-emphasis lh-1 mb-4">EK Global LLC</div>
-            <div class="display-5 fw-bold f-bold text-body-emphasis lh-1 mb-4">Appliance Repair</div>
-            <p class="lead fs-2 text-body-emphasis lh-1 mb-md-5">6AM - 8PM EVERY DAY</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
-              <button type="button" class="btn mt-md-5 btn-red btn-lg px-4 me-md-2 btn-lg f-bold fw-bold hover-card">Book and get 10% OFF</button>
-            </div>
-          </div>
-        </div>
       </div>
+        
 </body>
 </html>
