@@ -1,15 +1,6 @@
-const cloneEl = document.querySelector(".logos-slide").cloneNode(true);
+document.addEventListener("DOMContentLoaded", function() {
+  const cloneEl = document.querySelector(".logos-slide").cloneNode(true);
 const logos = document.querySelector('.logos').appendChild(cloneEl);
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
 var slider = tns({
   "container": "#reviewSlider",
   "center": true,
@@ -46,4 +37,5 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 Tu.tScroll({
   't-element': '.t-animated',
   't-duration': 0.9
+});
 });
