@@ -178,3 +178,6 @@ b {
     display: block;
     margin-top: 0; /* remove the gap so it doesn't close */
 }
+.active:active {
+    color:#d32020;
+}
