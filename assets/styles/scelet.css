@@ -51,6 +51,11 @@ b {
     width: 3rem;
     height: 3rem;
 }
+.why-icon-medium
+{
+    width: 100px;
+    height: 100px;
+}
 
 .logos::before, 
 .logos::after {
