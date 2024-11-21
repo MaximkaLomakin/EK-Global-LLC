@@ -56,7 +56,9 @@ b {
     width: 100px;
     height: 100px;
 }
-
+.main-block-img {
+    max-height: 95vh;
+}
 .logos::before, 
 .logos::after {
     content: '';
