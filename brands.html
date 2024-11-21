@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ek-global</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/styles/scelet.css">
+    <link rel="stylesheet" href="assets/styles/tiny-slider.css">
+    <link rel="stylesheet" href="assets/styles/t-scroll.min.css">
+</head>
+
+<body>
+    <div class="container-fluid px-4 main-block">
+        <div class="navbar navbar-expand-md  justify-content-center py-3 ">
+            <div class="container mx-3">
+                <a class="navbar-brand col-md-3 f-bold mb-md-0 fs-4 t-animated fadeDown" data-t-show="1" href="index.html">EK Global</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-12 col-md-auto justify-content-center mb-md-0 fs-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Main</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">We repair</a> 
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#repair">We repair</a></li>
+                                <li><a class="dropdown-item" href="apliences.html">Stove Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Wine-cooler Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Refrigerator Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Washer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Range Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Garbage Disposal Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Cooktop Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Freezer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Ice maker Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Dryer Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Microwave Repair</a></li>
+                                <li><a class="dropdown-item" href="#">Dishwasher Repair</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " role="button" aria-expanded="false">Serving area</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#serving">Serving area</a></li>
+                                <li><a class="dropdown-item" href="towns.html">Charlotte NC</a></li>
+                                <li><a class="dropdown-item" href="#">Stallings NC</a></li>
+                                <li><a class="dropdown-item" href="#">Newell NC</a></li>
+                                <li><a class="dropdown-item" href="#">Harrisburg NC</a></li>
+                                <li><a class="dropdown-item" href="#">Allen NC</a></li>
+                                <li><a class="dropdown-item" href="#">Mint Hill NC</a></li>
+                                <li><a class="dropdown-item" href="#">Indian Trail NC</a></li>
+                                <li><a class="dropdown-item" href="#">Wesley Chapel NC</a></li>
+                                <li><a class="dropdown-item" href="#">Monroe NC</a></li>
+                                <li><a class="dropdown-item" href="#">Unionville NC</a></li>
+                                <li><a class="dropdown-item" href="#">Mineral Springs NC</a></li>
+                                <li><a class="dropdown-item" href="#">Pineville NC</a></li>
+                                <li><a class="dropdown-item" href="#">Waxhaw NC</a></li>
+                                <li><a class="dropdown-item" href="#">Belmont NC</a></li>
+                                <li><a class="dropdown-item" href="#">Matthews NC</a></li>
+                                <li><a class="dropdown-item" href="#">Weddington NC</a></li>
+
+
+                                <li><a class="dropdown-item" href="#">Indian Hook SC</a></li>
+                                <li><a class="dropdown-item" href="#">Indian Land SC</a></li>
+                                <li><a class="dropdown-item" href="#">Catawba SC</a></li>
+                                <li><a class="dropdown-item" href="#">Fort Mill SC</a></li>
+                                <li><a class="dropdown-item" href="#">Lesslie SC</a></li>
+                                <li><a class="dropdown-item" href="#">Lake Wylie SC</a></li>
+                                <li><a class="dropdown-item" href="#">Spring Valley SC</a></li>
+                                <li><a class="dropdown-item" href="#">Rock Hill SC</a></li>
+                                <li><a class="dropdown-item" href="#">Tega Cay SC</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-us">Why us?</a>
+                        </li>
+                        
+                        <li class="nav-item d-md-none d-block">
+                            <a href="tel:+19803714319"
+                                class="navbar-brand badge text-bg-primary text-nowrap fs-4 my-3">(980)371-4319</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="py-3 my-4 border-top ">
+        <p class="text-center  text-body-secondary">&copy; 2024 EK Global</p>
+    </footer>
+    </div>
+    <script src="assets/scripts/bootstrap.min.js"></script>    
+    <script src="assets/scripts/tiny-slider.js"></script>
+    <script src="assets/scripts/t-scroll.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cloneEl = document.querySelector(".logos-slide").cloneNode(true);
+            const logos = document.querySelector('.logos').appendChild(cloneEl);
+            var slider = tns({
+            "container": "#reviewSlider",
+            "center": true,
+            "controls": true,
+            "nav": false,
+            responsive: {
+                300: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1,
+                },
+                700: {
+                gutter: 30,
+                items: 1,
+                },
+                1200: {
+                items: 3,
+                gutter: 50,
+                }
+            },
+            "autoplay": true,
+            //"autoplayHoverPause": true,
+            "autoplayButtonOutput": false,
+            "autoplayTimeout": 20000,
+            "loop": true,
+            "swipeAngle": false,  
+            "mouseDrag": true,
+            "speed": 800,
+            "prevButton": '#slider1_prev', 
+            "nextButton": '#slider1_next'
+            });
+        });
+    </script>
+</body>
+</html>
