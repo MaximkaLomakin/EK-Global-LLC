@@ -57,7 +57,7 @@ b {
     height: 100px;
 }
 .main-block-img {
-    max-height: 95vh;
+    max-height: 80vh;
 }
 .logos::before, 
 .logos::after {
