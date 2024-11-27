@@ -188,3 +188,9 @@ b {
 .active:active {
     color:#d32020;
 }
+.charlot {
+    background-image: url("/EK-Global-LLC/assets/images/charlotte.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    z-index: 1;
+}
