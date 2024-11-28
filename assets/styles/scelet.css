@@ -194,3 +194,6 @@ b {
     background-size: cover ;
     z-index: 1;
 }
+.img-thumb {
+    height: 80%;
+}
