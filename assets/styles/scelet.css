@@ -175,6 +175,12 @@ b {
     border-radius: 50%;
     object-fit: cover;
 }
+.item i {
+    width: 45px !important;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+}
 .pop-block {
     background-color: rgb(255 255 255 / 75%);
     background-image: url(../images/back.svg);
