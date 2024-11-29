@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 Tu.tScroll({
-  't-element': '.t-animated',
+  't-element': '.t-animated, .fadeDown, .bounceOut, .fadeIn, .bounceIn, .zoomOut', 
   't-duration': 0.9
 });
 
