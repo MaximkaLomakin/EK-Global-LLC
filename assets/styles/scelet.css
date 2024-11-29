@@ -108,6 +108,13 @@ b {
 .hover-card {
     transition: transform 0.4s ease-out;
 }
+
+.hover-card-brands:hover {
+    transform: scale(1.01);
+}
+.hover-card-brands {
+    transition: transform 0.3s ease-out;
+}
 .bg-red {
     color: white;
     background-color: #de2121;
