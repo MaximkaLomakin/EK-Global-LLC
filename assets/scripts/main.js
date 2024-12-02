@@ -6,4 +6,8 @@ Tu.tScroll({
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+window.scrollBy(0, -2);
+setTimeout(() => { 
+  window.scrollBy(0, 2); },
+50);
 });
