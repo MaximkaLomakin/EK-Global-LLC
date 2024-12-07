@@ -10,4 +10,18 @@ window.scrollBy(0, -2);
 setTimeout(() => { 
   window.scrollBy(0, 2); },
 50);
+
+var modal = document.getElementById('bookingModal');
+  modal.addEventListener('shown.bs.modal', function() {
+      var iframe = modal.querySelector('iframe');
+      if (iframe) {
+          iframe.setAttribute('src', 'https://koalendar.com/e/appliance-repair-appointment-with-ek-global?embed=true');
+      }
+  });
+  modal.addEventListener('hide.bs.modal', function() {
+      var iframe = modal.querySelector('iframe');
+      if (iframe) {
+          iframe.setAttribute('src', '');
+      }
+  });
 });
