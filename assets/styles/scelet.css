@@ -220,6 +220,7 @@ b {
 .restoran {
     background-image: url("/assets/images/restoran\ \(1\).webp");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover ;
     z-index: 1;
 }
