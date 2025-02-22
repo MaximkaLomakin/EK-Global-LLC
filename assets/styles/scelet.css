@@ -218,7 +218,7 @@ b {
     height: 80%;
 }
 .restoran {
-    background-image: url("/assets/images/restoran\ \(1\).webp");
+    background-image: url("/assets/images/restoran.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover ;
@@ -226,4 +226,10 @@ b {
 }
 .fs-7 {
     font-size: 0.7rem;
+}
+.iframe-form
+{
+    width: 100%;
+    height: 800px;
+    border: 0;
 }
