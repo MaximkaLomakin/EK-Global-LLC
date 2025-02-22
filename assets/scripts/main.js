@@ -21,7 +21,7 @@ var modal = document.getElementById('bookingModal');
   modal.addEventListener('hide.bs.modal', function() {
       var iframe = modal.querySelector('iframe');
       if (iframe) {
-          iframe.setAttribute('src', '');
+          iframe.removeAttribute('src');
       }
   });
 });
