@@ -233,3 +233,6 @@ b {
     height: 800px;
     border: 0;
 }
+.navbar-toggler-icon {
+    background-image: url('/assets/images/menu.svg');
+}
