@@ -22,3 +22,7 @@ RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . / [R=301,L]
+
+<FilesMatch ".(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
