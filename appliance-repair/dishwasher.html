@@ -458,7 +458,7 @@
                     <a href="/#reviews" data-bs-toggle="tooltip" data-bs-title="Go to reviews">
                         <div class="card rounded-start-pill bg-white h-100 border-0 pop-block">
                             <div class="card-body py-0">
-                                <img src="/assets/images/google_logo.webp" class="img-fluid " style="height: 120px; width: auto;">
+                                <img alt="5 star reviews" src="/assets/images/google_logo.webp" class="img-fluid " style="height: 120px; width: auto;">
                             </div>
                         </div>
                     </a>
@@ -481,10 +481,10 @@
                         </div>
                     </div>
                     <div class="d-none d-md-flex flex-column justify-content-center align-items-center order-1 order-md-2">
-                        <img src="/assets/images/dishwasher.webp" class="img-fluid img-thumb t-animated fadeDown main-block-img" data-t-show="1">
+                        <img src="/assets/images/dishwasher.webp" alt="Dishwasher" class="img-fluid img-thumb t-animated fadeDown main-block-img" data-t-show="1">
                     </div>
                     <div class="d-flex d-md-none flex-column align-items-center order-1 order-md-2">
-                        <img src="/assets/images/dishwasher.webp" class="img-fluid t-animated fadeDown main-block-img" data-t-show="1">
+                        <img src="/assets/images/dishwasher.webp" alt="Dishwasher" class="img-fluid t-animated fadeDown main-block-img" data-t-show="1">
                     </div>
                 </div>
             </div>
@@ -528,178 +528,165 @@
     <div class="container-fluid fadeIn" data-t-show="1.5" id="reviews">
         <div class="my-5 rounded rounded-3">
             <h2 class="text-center fw-bold f-bold fs-1 pb-2">We repair</h2>
-            <div class="row">
-                <div class="d-flex d-none d-md-block col-md-2 col-lg-1 align-self-center text-end">
-                    <button data-controls="prev" class="btn btn-red btn-circle" id="slider1_prev" aria-label="Previous">
-                        <i class="bi bi-chevron-compact-left fs-3"></i>
-                    </button>
-                </div>
-                <div class="col-12 col-md-8 col-lg-10">
-                   <div id="reviewSlider">
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/stove">
-                                    <img src="/assets/images/stove.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body ">
-                                    <h3 class="card-title fs-5 f-bold text-center">Stove Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-3 px-4">
+                <div class="col hover-card bounceOut" data-t-show="1">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/stove">
+                            <img src="/assets/images/stove.webp" alt="stove repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body ">
+                            <h3 class="card-title fs-5 f-bold text-center ">Stove Repair</h3>
                         </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/wine-cooler">
-                                    <img src="/assets/images/wine_coolers.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Wine-cooler Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/refrigerator">
-                                    <img src="/assets/images/Refrigerator.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center h-100">Refrigerator Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/washer">
-                                    <img src="/assets/images/dryer.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center h-100">Washer Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/range">
-                                    <img src="/assets/images/stove.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body ">
-                                    <h3 class="card-title fs-5 f-bold text-center">Range Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/garbage_disposal">
-                                    <img src="/assets/images/garb_dispo.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body ">
-                                    <h3 class="card-title fs-5 f-bold text-center">Garbage Disposal Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/cooktop">
-                                    <img src="/assets/images/cooktop.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body ">
-                                    <h3 class="card-title fs-5 f-bold text-center">Cooktop Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/freezer">
-                                    <img src="/assets/images/freezer_new.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Freezer Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/ice_maker">
-                                    <img src="/assets/images/ice_maker_under.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Ice maker Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/dryer">
-                                    <img src="/assets/images/dryer_16.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Dryer Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/microwave">
-                                    <img src="/assets/images/new_microwave.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Microwave Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col hover-card">
-                            <div class="card shadow p-3 my-5 bg-body-tertiary rounded h-100 border-0">
-                                <a href="/appliance-repair/dishwasher">
-                                    <img src="/assets/images/dishwasher.webp" class="img-fluid img-card mx-auto d-block m-2">
-                                </a>
-                                <div class="card-body">
-                                    <h3 class="card-title fs-5 f-bold text-center">Dishwasher Repair</h3>
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
-                                </div>
-                            </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex d-none d-md-block col-md-2 col-lg-1 align-self-center ">
-                    <button data-controls="next" class="btn btn-red btn-circle" id="slider1_next"  aria-label="Next">
-                        <i class="bi bi-chevron-compact-right fs-3"></i>
-                    </button>
+                <div class="col hover-card bounceOut" data-t-show="1.2">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/wine-cooler">
+                            <img src="/assets/images/wine_coolers.webp" alt="Wine-cooler repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Wine-cooler Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.4">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/refrigerator">
+                            <img src="/assets/images/Refrigerator.webp" alt="refrigerator repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center h-100">Refrigerator Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.6">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/washer">
+                            <img src="/assets/images/dryer.webp" alt="dryer repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center h-100">Washer Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.8">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/range">
+                            <img src="/assets/images/stove.webp" alt="stove repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body ">
+                            <h3 class="card-title fs-5 f-bold text-center">Range Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/garbage_disposal">
+                            <img src="/assets/images/garb_dispo.webp" alt="Garbage Disposal repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body ">
+                            <h3 class="card-title fs-5 f-bold text-center">Garbage Disposal Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.2">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/cooktop">
+                            <img src="/assets/images/cooktop.webp" alt="cooktop repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body ">
+                            <h3 class="card-title fs-5 f-bold text-center">Cooktop Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.4">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/freezer">
+                            <img src="/assets/images/freezer_new.webp" alt="freezer repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Freezer Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.6">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/ice_maker">
+                            <img src="/assets/images/ice_maker_under.webp" alt="ice maker repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Ice maker Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.8">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/dryer">
+                            <img src="/assets/images/dryer_16.webp" alt="dryer repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Dryer Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/microwave">
+                            <img src="/assets/images/new_microwave.webp" alt="microwave repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Microwave Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col hover-card bounceOut" data-t-show="1.2">
+                    <div class="card shadow p-3 mb-2 bg-body-tertiary rounded h-100 border-0">
+                        <a href="/appliance-repair/dishwasher">
+                            <img src="/assets/images/dishwasher.webp" alt="dishwasher repair" class="img-fluid img-card mx-auto d-block m-2">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 f-bold text-center">Dishwasher Repair</h3>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4  mx-md-0 mx-5 px-md-0 px-4">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn-red btn-lg f-bold fw-bold hover-card">Book Online</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <div class=" container p-5 mt-5 rounded-3">
@@ -897,7 +884,7 @@
     <div class="container my-5">
         <div class="p-5 text-center bg-secondary bg-opacity-25 rounded-3 main-block">
             <i class="bi bi-question-square icon-8 text-red why-icon-small rounded-5 mb-2" ></i>
-          <h1 class="text-body-emphasis f-bold fw-bold">Are you ready?</h1>
+          <h2 class="text-body-emphasis f-bold fw-bold">Are you ready?</h2>
           <p class="col-lg-8 mx-auto fs-5 text-muted">
             Leave a request online and get a <span class="f-bold fw-bold">10%</span> discount!
           </p>
@@ -970,18 +957,18 @@
             });
         });
     </script>
-</body>
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModal" >
-    <div class="modal-dialog modal-fullscreen-sm-down">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5">Book online</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModal" >
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title fs-5">Book online</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
             </div>
         </div>
     </div>
-</div>
+</body>
 </html>
