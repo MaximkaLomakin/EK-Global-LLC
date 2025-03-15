@@ -23,7 +23,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . / [R=301,L]
 
-<FilesMatch ".(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$">
+<FilesMatch ".(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot|webp)$">
     Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
@@ -57,6 +57,7 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]
   AddOutputFilterByType DEFLATE font/ttf
   AddOutputFilterByType DEFLATE image/svg+xml
   AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE image/webp
   AddOutputFilterByType DEFLATE text/css
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/javascript
